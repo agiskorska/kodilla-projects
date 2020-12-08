@@ -1,0 +1,40 @@
+$font-weights: (
+    "regular": 400,
+    "medium": 500,
+    "bold": 600
+);
+$font-size: (
+    "huge": calc(2px + 300%),
+    "header": calc(2px + 180%),
+    "regular": 16px,
+    "title": 32px
+);
+
+
+$colors: (
+  primary: (
+    base: $primary-color,
+    light: lighten($primary-color, $lighten),
+    dark: darken($primary-color, $darken),
+  ),
+  articles: (
+    base: $articles,
+    light: lighten($articles, $lighten),
+    dark: darken($articles, $darken),
+  ),
+  font-header: (
+    base: $font-header,
+    light: lighten($font-header, $lighten),
+    dark: darken($font-header, $darken),
+  ),
+  font-body: (
+    base: $font-body,
+    light: lighten($font-body, $lighten),
+    dark: darken($font-body, $darken),
+  ),
+  neutral: ( 
+    base: #69777F,
+    light: #B2CAD8,
+    dark: $black,
+  ),
+);

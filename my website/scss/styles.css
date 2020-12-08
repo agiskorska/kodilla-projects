@@ -1,0 +1,311 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global */
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  background: crl(primary, light);
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section, header {
+  padding: 108px;
+}
+
+.section-title {
+  position: relative;
+  font-size: 32px;
+  margin: 0 0 60px 0;
+  font-family: "Nerko One", cursive;
+}
+
+.section-title::after {
+  position: absolute;
+  content: '';
+  bottom: -12px;
+  left: 50%;
+  width: 100px;
+  height: 10px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: #B2CAD8;
+}
+
+/* Splash */
+.splash {
+  height: 50vh;
+  position: relative;
+  color: #ffffff;
+  font-size: calc(2px + 180%);
+}
+
+.splash::after {
+  content: "";
+  background-image: url("https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  opacity: 0.5;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.splash-inner {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.splash i {
+  color: #912e4d;
+  background: #D16E8D;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+}
+
+.page-title {
+  color: #912e4d;
+  font-size: 60px;
+  margin: 48px 0 0 0;
+  font-family: "Nerko One", cursive;
+}
+
+.page-title::after {
+  position: absolute;
+  content: '';
+  bottom: 50px;
+  left: 50%;
+  width: 100px;
+  height: 10px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: #B2CAD8;
+}
+
+.page-subtitle {
+  color: crl(primary, light);
+  font-size: 18px;
+  margin: 48px 0 0 0;
+}
+
+/* Intro */
+.intro {
+  background: #B2CAD8;
+  width: 100%;
+}
+
+.intro .container {
+  width: 50%;
+  margin: 0;
+}
+
+.intro .container p {
+  position: relative;
+  left: 50%;
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+  padding: 48px 0;
+}
+
+/* About */
+.about {
+  background-color: #d7819c;
+}
+
+.about p {
+  padding: 30px;
+}
+
+/* Skills */
+.skill-left, .skill-right {
+  position: relative;
+}
+
+.skill-img {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.skill-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 1;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.skill-img img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.skill-right .skill-img {
+  right: 0;
+}
+
+.skill-right .skill-description {
+  padding: 36px 55% 36px 0;
+  text-align: right;
+}
+
+.skill-left .skill-description {
+  padding: 36px 0 36px 55%;
+  text-align: left;
+}
+
+/* Gallery */
+.gallery {
+  width: 100%;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.gallery .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gallery .row .gallery-img {
+  -ms-flex-preferred-size: 33.3%;
+      flex-basis: 33.3%;
+  position: relative;
+}
+
+.gallery .row .gallery-img .gallery-btn {
+  background: #B2CAD8;
+  padding: 10px;
+  margin-top: 20%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.gallery .row .gallery-img .gallery-content {
+  visibility: hidden;
+  position: absolute;
+  width: 30%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.gallery .row .gallery-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.gallery .row .gallery-img:hover * {
+  visibility: visible;
+}
+
+/* Contact */
+.contact {
+  background: #d7819c;
+  margin-bottom: 40px;
+}
+
+.contact .container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+  padding: 30px;
+  text-align: center;
+}
+
+.contact form input {
+  font-family: "Nerko One", cursive;
+  margin: 10px;
+  padding: 5px;
+  width: 100%;
+}
+
+.contact form textarea {
+  font-family: "Nerko One", cursive;
+  width: 100%;
+  height: 200px;
+  padding: 5px;
+}
+
+.contact form [type="submit"] {
+  background: #912e4d;
+  border: none;
+  color: white;
+  width: 100px;
+}
+
+/* Footer */
+.page-footer {
+  font-weight: bold;
+}
+
+.page-footer p {
+  width: 100%;
+  padding: 20px;
+  background: #B2CAD8;
+}
+/*# sourceMappingURL=styles.css.map */
