@@ -1,0 +1,22 @@
+$colors: (
+  header: (
+    base: $header-color,
+    light: lighten($header-color, $lighten),
+    dark: darken($header-color, $darken),
+  ),
+  articles: (
+    base: $article-color,
+    light: lighten($article-color, $lighten),
+    dark: darken($article-color, $darken),
+  ),
+  break: (
+    base: $breakdown-color,
+    light: lighten($breakdown-color, $lighten),
+    dark: darken($breakdown-color, $darken),
+  ),
+  font: (
+    base: $article-color,
+    light: #ffff,
+    dark: #000000
+  ),
+);

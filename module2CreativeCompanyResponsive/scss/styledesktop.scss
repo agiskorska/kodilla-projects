@@ -1,0 +1,30 @@
+@import './variables';
+@import './functions';
+@import './maps';
+
+@media (max-width: 760px) {
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 25vw;
+}
+nav{
+    display:none;
+}
+
+header {
+    top: 0;
+    width: 100%;
+    height: 500px;
+    background: color(articles, light);
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+}
+}

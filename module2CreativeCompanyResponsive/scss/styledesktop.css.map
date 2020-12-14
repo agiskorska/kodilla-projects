@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AAIA,MAAM,EAAE,SAAS,EAAE,KAAK;EAExB,AAAA,IAAI,EAAE,IAAI,CAAC;IACP,KAAK,EAAE,KAAK;IACZ,MAAM,EAAE,KAAK;IACb,MAAM,EAAE,CAAC;IACT,OAAO,EAAE,CAAC;GACb;EAED,AAAA,GAAG,CAAC;IACA,KAAK,EAAE,IAAI;GACd;EACD,AAAA,GAAG,CAAA;IACC,OAAO,EAAC,IAAI;GACf;EAED,AAAA,MAAM,CAAC;IACH,GAAG,EAAE,CAAC;IACN,KAAK,EAAE,IAAI;IACX,MAAM,EAAE,KAAK;IACb,UAAU,EGhBH,OAAiC;IHiBxC,OAAO,EAAE,IAAI;IACb,WAAW,EAAE,MAAM;IACnB,eAAe,EAAE,MAAM;GAC1B",
+    "sources": [
+        "styledesktop.scss",
+        "_variables.scss",
+        "_functions.scss",
+        "_maps.scss"
+    ],
+    "names": [],
+    "file": "styledesktop.css"
+}
